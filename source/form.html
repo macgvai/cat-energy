@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <title>cat-energy</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-desktop.svg" width="202" height="59" alt="cat-energy">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--current">
+                <a href="">главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="catalog.html">каталог продукции</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="page-form">
+      <div class="page-form__wrapper">
+        <h1 class="page-form__title title">Подбор программы</h1>
+        <p class="page-form__desc">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="page-form__form form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="form__info-cat">
+            <fieldset class="info-cat">
+              <legend class="info-cat__legend form__legend">Данные кота</legend>
+                <ul class="info-cat__list">
+                  <li class="info-cat__item">
+                    <label class="info-cat__lable form__lable" for="cat-name">имя:*</label>
+                    <input class="info-cat__input form__input" type="name" id="cat-name" placeholder="барсик">
+                  </li>
+                  <li class="info-cat__item">
+                    <label class="info-cat__lable form__lable" for="cat-weight">вес (кг):*</label>
+                    <input class="info-cat__input form__input" type="name" id="cat-weight" placeholder="7">
+                  </li>
+                  <li class="info-cat__item">
+                    <label class="info-cat__lable form__lable" for="cat-age">возраст (лет):</label>
+                    <input class="info-cat__input form__input" type="name" id="cat-age" placeholder="7">
+                  </li>
+                </ul>
+            </fieldset>
+          </div>
+          <div class="form__programm">
+            <fieldset class="form-programm">
+              <legend class="form-programm__legend form__legend">Выбор программы</legend>
+              <ul class="form-programm__list">
+                <li class="form-programm__item">
+
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="form__contacts-owner"></div>
+          <div class="form__text-about-cat"></div>
+          <div class="form__additionally"></div>
+          <button class="form__button button">отправить заявку</button>
+          <p class="form__required-fields">* — Обязательные поля</p>
+        </form>
+      </div>
+      <section class="map">
+        <div class="map__info">
+          <p class="map__welcome">приглашаем к сотрудничеству дилеров!</p>
+          <address class="map__address">
+            ул. Большая Конюшенная, д. 19/8
+            <br><br>
+            Санкт-Петербург
+          </address>
+        </div>
+        <h2 class="visually-hidden">карта</h2>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <h2 class="visually-hidden">подвал сайта</h2>
+      <div class="page-footer__wrap">
+        <a href="page-footer__logo">
+          <img src="img/footer-logo_desktop.svg" alt="логотоип cat-energy" width="128" height="24">
+        </a>
+        <div class="page-footer__social">
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <h3 class="visually-hidden">Мы Вконтакте</h3>
+                <img src="img/icon_vkontakte.svg" width="30" height="22" alt="вконтакте">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <h3 class="visually-hidden">Мы в инстаграме</h3>
+                <img src="img/icon_instagram.svg" width="23" height="23" alt="инстаграм">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a href="" class="social-list__link">
+                <h3 class="visually-hidden">Мы в фейсбуке</h3>
+                <img src="img/icon_facebook.svg" width="28" height="33" alt="фейсбук">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright">
+          <a href="https://htmlacademy.ru/intensive"  target="_blank">
+            <img src="img/htmlacademy.svg" alt="htmlacademy" width="163" height="34">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
