@@ -42,20 +42,20 @@
           <div class="form__info-cat">
             <fieldset class="info-cat">
               <legend class="info-cat__legend form__legend">Данные кота</legend>
-                <ul class="info-cat__list">
-                  <li class="info-cat__item">
-                    <label class="info-cat__lable form__lable" for="cat-name">имя:*</label>
-                    <input class="info-cat__input form__input" type="name" id="cat-name" placeholder="барсик">
-                  </li>
-                  <li class="info-cat__item">
-                    <label class="info-cat__lable form__lable" for="cat-weight">вес (кг):*</label>
-                    <input class="info-cat__input form__input" type="name" id="cat-weight" placeholder="7">
-                  </li>
-                  <li class="info-cat__item">
-                    <label class="info-cat__lable form__lable" for="cat-age">возраст (лет):</label>
-                    <input class="info-cat__input form__input" type="name" id="cat-age" placeholder="7">
-                  </li>
-                </ul>
+              <ul class="info-cat__list">
+                <li class="info-cat__item">
+                  <label class="info-cat__lable form__lable" for="cat-name">имя:*</label>
+                  <input class="info-cat__input form__input" type="name" id="cat-name" name="cat-name" placeholder="барсик">
+                </li>
+                <li class="info-cat__item">
+                  <label class="info-cat__lable form__lable" for="cat-weight">вес (кг):*</label>
+                  <input class="info-cat__input form__input" type="text" id="cat-weight" name="cat-weight" placeholder="7">
+                </li>
+                <li class="info-cat__item">
+                  <label class="info-cat__lable form__lable" for="cat-age">возраст (лет):</label>
+                  <input class="info-cat__input form__input" type="text" id="cat-age" name="cat-age" placeholder="7">
+                </li>
+              </ul>
             </fieldset>
           </div>
           <div class="form__programm">
@@ -63,14 +63,65 @@
               <legend class="form-programm__legend form__legend">Выбор программы</legend>
               <ul class="form-programm__list">
                 <li class="form-programm__item">
-
+                  <label class="form-programm__label form__lable" for="weightLoss">похудение</label>
+                  <input class="form-programm__input form__input" type="radio" id="weightLoss" name="programm" value="weight-loss">
+                </li>
+                <li class="form-programm__item">
+                  <label class="form-programm__label form__lable" for="weightGain">набор массы</label>
+                  <input class="form-programm__input form__input" type="radio" id="weightGain" name="programm" value="weight-gain">
+                </li>
+                <li class="form-programm__item">
+                  <label class="form-programm__label form__lable" for="DontKnow">не знаю (Нужен ваш совет)</label>
+                  <input class="form-programm__input form__input" type="radio" id="DontKnow" name="programm" value="need-advice">
                 </li>
               </ul>
             </fieldset>
           </div>
-          <div class="form__contacts-owner"></div>
-          <div class="form__text-about-cat"></div>
-          <div class="form__additionally"></div>
+          <div class="form__contacts-owner">
+            <fieldset class="contacts">
+              <legend class="contacts__legend form__legend">Контактные данные (владельца кота)</legend>
+              <ui class="contacts-list">
+                <li class="contacts_item">
+                  <label class="contacts__label form__lable" for="email">E-mail:*</label>
+                  <input class="contacts__input form__input" type="email" id="email" name="e-mail">
+                </li>
+                <li class="contacts_item">
+                  <label class="contacts__label form__lable" for="telephone">Телефон:*</label>
+                  <input class="contacts__input form__input" type="tel" id="telephone" name="tel-number">
+                </li>
+              </ui>
+            </fieldset>
+          </div>
+          <div class="form__text-about-cat">
+            <fieldset class="text-about-cat">
+              <legend class="text-about-cat form__legend">Комментарий</legend>
+              <label for="aboutCat"></label>
+              <textarea class="text-about-cat__text" name="about-cat" id="aboutCat" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </fieldset>
+          </div>
+          <div class="form__additionally">
+            <fieldset class="additionally">
+              <legend class="additionally__legend form__legend">Дополнительно</legend>
+              <ul class="additionally__list">
+                <li class="additionally__item">
+                  <label class="additionally__label form__lable" for="sweetener">питьевая вода</label>
+                  <input class="additionally__input form__input" type="checkbox" id="sweetener" name="sweetener">
+                </li>
+                <li class="additionally__item">
+                  <label class="additionally__label form__lable" for="water">сахарозаменитель</label>
+                  <input class="additionally__input form__input" type="checkbox" id="water" name="water">
+                </li>
+                <li class="additionally__item">
+                  <label class="additionally__label form__lable" for="milk">молоко</label>
+                  <input class="additionally__input form__input" type="checkbox" id="milk" name="milk">
+                </li>
+                <li class="additionally__item">
+                  <label class="additionally__label form__lable" for="vitamins">витамины</label>
+                  <input class="additionally__input form__input" type="checkbox" id="vitamins" name="vitamins">
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <button class="form__button button">отправить заявку</button>
           <p class="form__required-fields">* — Обязательные поля</p>
         </form>
