@@ -1,0 +1,37 @@
+.additionally {
+  border: none;
+}
+.additionally__legend {
+}
+.additionally__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.additionally__item {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.additionally__label {
+  position: relative;
+  margin-left: 40px;
+  cursor: pointer;
+}
+.additionally__input {
+}
+
+
+.additionally__input + .additionally__label::before {
+  content: "";
+  position: absolute;
+  left: -45px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #CDCDCD;
+}
+
+.additionally__input:checked + .additionally__label::before {
+  background: url(../../img/additionally/checked\ .svg) no-repeat center;
+}
