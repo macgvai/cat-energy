@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
@@ -15,6 +16,7 @@
         <div class="page-header__logo-wrapper">
           <a href="index.html" class="page-header__logo">
             <img class="page-header__logo-image" src="img/logo-mobile.svg" width="33.32" height="37.61" alt="cat-energy">
+            <img class="page-header__logo-image-tablet" src="img//page-header/logo-tablet.svg" width="174" height="51.68" alt="cat-energy">
           </a>
           <a href="index.html" class="page-header__logo-text-link">
             <img class="page-header__logo-text" src="img/logo-mobile-text.svg" width="101" height="17.99" alt="cat-energy">
@@ -27,13 +29,13 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a class="main-nav__item-link" href="index.html">главная</a>
+                <a class="main-nav__item-link main-nav__item-link-black" href="index.html">главная</a>
               </li>
               <li class="main-nav__item main-nav__item--current">
-                <a class="main-nav__item-link" href="catalog.html">каталог продукции</a>
+                <a class="main-nav__item-link main-nav__item-link-black" href="catalog.html">каталог продукции</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__item-link" href="form.html">подбор программы</a>
+                <a class="main-nav__item-link main-nav__item-link-black" href="form.html">подбор программы</a>
               </li>
             </ul>
           </div>
@@ -45,35 +47,6 @@
         <h1 class="page-catalog__title title">Каталог продукции</h1>
         <section class="page-catalog__catalog">
           <ul class="page-catalog__list">
-            <li class="page-catalog__item">
-              <div class="catalog-item">
-                <a href="#" class="catalog-item__link-img">
-                  <img class="catalog-item__img" src="img/catalog/catalog-1-desktop 1.png"  width="68" height="86" alt="Cat Energy PRO 500г">
-                </a>
-                <div class="catalog-item__info-wrap">
-                  <a href="#" class="catalog-item__link-name">
-                    Cat Energy PRO 500 г
-                  </a>
-                  <table  class="catalog-item__table">
-                    <tbody>
-                      <tr class="catalog-item__row">
-                        <td class="catalog-item__info">Масса</td>
-                        <td class="catalog-item__info-value">500 г</td>
-                      </tr>
-                      <tr class="catalog-item__row">
-                        <td class="catalog-item__info">Вкус</td>
-                        <td class="catalog-item__info-value">Курица</td>
-                      </tr>
-                      <tr class="catalog-item__row">
-                        <td class="catalog-item__info">Цена</td>
-                        <td class="catalog-item__info-value">700 Р.</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  </div>
-                <a class="catalog-item__button button" href="order.html">заказать</a>
-              </div>
-            </li>
             <li class="page-catalog__item">
               <div class="catalog-item">
                 <a href="#" class="catalog-item__link-img">
@@ -292,26 +265,34 @@
           <ul class="additional-items__list">
             <li class="additional-items__item">
               <h3 class="additional-items__name">Сахарозаменитель</h3>
-              <p class="additional-items__value">1 упаковка (100 г)</p>
-              <p class="additional-items__price">200 Р.</p>
+              <dl class="additional-items__descr">
+                <dt class="additional-items__value">1 упаковка (100 г)</dt>
+                <dd class="additional-items__price">200 Р.</dd>
+              </dl>
               <a class="additional-items__button button" href="order.html">заказать</a>
             </li>
             <li class="additional-items__item">
               <h3 class="additional-items__name">питьевая вода</h3>
-              <p class="additional-items__value">5 литров</p>
-              <p class="additional-items__price">50 Р.</p>
+              <dl class="additional-items__descr">
+                <dt class="additional-items__value">5 литров</dt>
+                <dd class="additional-items__price">50 Р.</dd>
+              </dl>
               <a class="additional-items__button button" href="order.html">заказать</a>
             </li>
             <li class="additional-items__item">
               <h3 class="additional-items__name">молоко</h3>
-              <p class="additional-items__value">1 литр</p>
-              <p class="additional-items__price">100 Р.</p>
+              <dl class="additional-items__descr">
+                <dt class="additional-items__value">1 литр</dt>
+                <dd class="additional-items__price">100 Р.</dd>
+              </dl>
               <a class="additional-items__button button" href="order.html">заказать</a>
             </li>
             <li class="additional-items__item">
               <h3 class="additional-items__name">витамины</h3>
-              <p class="additional-items__value">1 упаковка (30 г)</p>
-              <p class="additional-items__price">300 Р.</p>
+              <dl class="additional-items__descr">
+                <dt class="additional-items__value">1 упаковка (30 г)</dt>
+                <dd class="additional-items__price">300 Р.</dd>
+              </dl>
               <a class="additional-items__button button" href="order.html">заказать</a>
             </li>
           </ul>

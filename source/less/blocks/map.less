@@ -1,11 +1,22 @@
 .map {
 }
 .map__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 20px;
+  padding-top: 28px;
+  padding-bottom: 26px;
+  @media (min-width: @tablet-width) {
+    margin: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .map__welcome {
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
+  margin: 0;
 }
 .map__address {
   font-family: 'Arial';

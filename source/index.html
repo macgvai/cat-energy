@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
@@ -15,12 +16,13 @@
         <div class="page-header__logo-wrapper">
           <a class="page-header__logo">
             <img class="page-header__logo-image" src="img/logo-mobile.svg" width="33.32" height="37.61" alt="cat-energy">
+            <img class="page-header__logo-image-tablet" src="img//page-header/logo-tablet.svg" width="174" height="51.68" alt="cat-energy">
           </a>
           <a class="page-header__logo-text-link">
             <img class="page-header__logo-text" src="img/logo-mobile-text.svg" width="101" height="17.99" alt="cat-energy">
           </a>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -45,8 +47,10 @@
         <div class="main-block__wrapper">
           <h1 class="main-block__title title">Функциональное питание для котов</h1>
           <p class="main-block__subtitle">Занялся собой? Займись котом!</p>
-          <img class="main-block__img" src="img/index-can.png" width="280" height="270" alt="бакнка cat-energy 500 грамм">
-          <a href="form.html" class="main-block__button button">подобрать программу</a>
+          <img class="main-block__img" src="img//main-block/index-can.png" width="280" height="270" alt="бакнка cat-energy 500 грамм">
+          <img class="main-block__img-tablet" src="img//main-block/index-can-tablet.png" width="709" height="609" alt="бакнка cat-energy 500 грамм">
+          <img class="main-block__img-desctop" src="img//main-block/index-can-desctop.png" width="552" height="499" alt="бакнка cat-energy 500 грамм">
+          <a href="form.html" class="button main-block__button">подобрать программу</a>
         </div>
       </section>
       <section class="choose-programs">
@@ -55,7 +59,7 @@
           <ul class="program">
             <li class="program__item">
               <div class="program__img-circle">
-                <img class="program__img" src="img/program/cat-slim.svg" alt="иконка стройного кота" width="36" height="50">
+                <img class="program__img program__img--slim" src="img/program/cat-slim.svg" alt="иконка стройного кота" width="36" height="50">
               </div>
               <h3 class="program__title">похудение</h3>
               <p class="program__descr">Ваш кот весит больше собаки и почти утратил способность
@@ -65,7 +69,7 @@
             </li>
             <li class="program__item">
               <div class="program__img-circle">
-                <img class="program__img" src="img/program/cat-pro.svg" alt="иконка мощного кота" width="67" height="28">
+                <img class="program__img program__img--pro" src="img/program/cat-pro.svg" width="67" height="28" alt="иконка мощного кота" >
               </div>
               <h3 class="program__title">набор массы</h3>
               <p class="program__descr">Заработать авторитет среди дворовых котов и даже собак?
@@ -97,22 +101,24 @@
       </section>
       <section class="example">
         <div class="example__wrapper">
-          <h2 class="example__title title">Живой пример</h2>
-          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <div class="example__stats-wrap">
-            <div class="example__stats-item example__stats-item--weight">
-              <p class="example__stats-value">5 КГ</p>
-              <p class="example__stats-subtitle">снижение веса</p>
+          <div class="example__descr">
+            <h2 class="example__title title">Живой пример</h2>
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            <div class="example__stats-wrap">
+              <div class="example__stats-item example__stats-item--weight">
+                <p class="example__stats-value">5 КГ</p>
+                <p class="example__stats-subtitle">снижение <br> веса</p>
+              </div>
+              <div class="example__stats-item example__stats-item--days">
+                <p class="example__stats-value">60 ДНЕЙ</p>
+                <p class="example__stats-subtitle">затрачено <br> времени</p>
+              </div>
             </div>
-            <div class="example__stats-item example__stats-item--days">
-              <p class="example__stats-value">60 ДНЕЙ</p>
-              <p class="example__stats-subtitle">затрачено времени</p>
-            </div>
+            <p class="example__cost">
+              <span class="example__cost-text">ЗАТРАТЫ НА ПИТАНИЕ:</span>
+              <span class="example__cost-text">15 000 РУБ.</span>
+            </p>
           </div>
-          <p class="example__cost">
-            <span class="example__cost-text">ЗАТРАТЫ НА ПИТАНИЕ:</span>
-            <span class="example__cost-text">15 000 РУБ.</span>
-          </p>
           <div class="example__slider">
             <img class="example__slider-item" src="img/example/before-mobile 1.png" width="311" height="232" alt="толстый кот">
             <div class="example__slider-navigation">
@@ -134,50 +140,52 @@
       <section class="map">
         <h2 class="visually-hidden">карта</h2>
         <div class="map__info">
-          <p class="map__welcome">приглашаем к сотрудничеству дилеров!</p>
+          <p class="map__welcome">приглашаем <br> к сотрудничеству дилеров!</p>
           <address class="map__address">
             ул. Большая Конюшенная, д. 19/8
-            <br><br>
             Санкт-Петербург
           </address>
         </div>
         <iframe src="https://yandex.ru/map-widget/v1/-/CCUJQTRV1C" width="100%" height="362" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
       </section>
-      <div class="page-footer__wrap">
-        <a href="page-footer__logo">
-          <img src="img/footer-logo_desktop.svg" alt="логотоип cat-energy" width="128" height="24">
-        </a>
-        <div class="page-footer__social">
-          <ul class="social-list">
-            <li class="social-list__item">
-              <a href="" class="social-list__link">
-                <h3 class="visually-hidden">Мы Вконтакте</h3>
-                <img src="img/icon_vkontakte.svg" width="23" height="16" alt="вконтакте">
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="" class="social-list__link">
-                <h3 class="visually-hidden">Мы в инстаграме</h3>
-                <img src="img/icon_instagram.svg" width="16" height="16" alt="инстаграм">
-              </a>
-            </li>
-            <li class="social-list__item">
-              <a href="" class="social-list__link">
-                <h3 class="visually-hidden">Мы в фейсбуке</h3>
-                <img src="img/icon_facebook.svg" width="22" height="22" alt="фейсбук">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright">
-          <a href="https://htmlacademy.ru/intensive/adaptive"  target="_blank">
-            <img src="img/page-footer/HTML_Academy_text.svg" alt="htmlacademy" width="114" height="18">
+      <div class="page-footer__bottom">
+        <div class="page-footer__bottom-wrap">
+          <a class="page-footer__logo" href="page-footer__logo">
+            <img src="img/footer-logo_desktop.svg" alt="логотоип cat-energy" width="128" height="24">
           </a>
-          <a href="https://htmlacademy.ru/intensive/adaptive"  target="_blank">
-            <img src="img/page-footer/html academy.svg" alt="htmlacademy" width="27" height="34">
-          </a>
+          <div class="page-footer__social">
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a href="" class="social-list__link">
+                  <h3 class="visually-hidden">Мы Вконтакте</h3>
+                  <img src="img/icon_vkontakte.svg" width="23" height="16" alt="вконтакте">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="" class="social-list__link">
+                  <h3 class="visually-hidden">Мы в инстаграме</h3>
+                  <img src="img/icon_instagram.svg" width="16" height="16" alt="инстаграм">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="" class="social-list__link">
+                  <h3 class="visually-hidden">Мы в фейсбуке</h3>
+                  <img src="img/icon_facebook.svg" width="22" height="22" alt="фейсбук">
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright">
+            <a href="https://htmlacademy.ru/intensive/adaptive"  target="_blank">
+              <img src="img/page-footer/HTML_Academy_text.svg" alt="htmlacademy" width="114" height="18">
+            </a>
+            <a href="https://htmlacademy.ru/intensive/adaptive"  target="_blank">
+              <img src="img/page-footer/html academy.svg" alt="htmlacademy" width="27" height="34">
+            </a>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,16 +1,64 @@
 .main-block {
-  background-image: linear-gradient(to top, #fff 175px, transparent 175px), url(../../img/main-block/cat-main-block-background.png);
+  background-image: linear-gradient(to top, #fff 179px, transparent 179px), url(../../img/main-block/cat-main-block-background.png);
   background-color: @main-block-green;
   background-repeat: no-repeat;
   background-position-x: center;
+  margin-bottom: 21px;
+  @media (min-width: @tablet-width) {
+    background: none;
+  }
+  @media (min-width: @desktop-width) {
+    min-height: 700px;
+    ::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 696px;
+    top: 0;
+    right: 0;
+    background-image: url(../../img/main-block/cat-main-block-desktop.png);
+    background-color: #65a93c;
+    background-repeat: no-repeat;
+    background-position: right;
+    z-index: -2;
+    }
+  }
 }
 .main-block__wrapper {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 27px;
+  @media (min-width: @tablet-width) {
+    margin: 0 30px;
+  }
+  @media (min-width: @desktop-width) {
+    margin: 0 110px;
+    padding-right: 50%;
+    padding-top: 225px;
+    padding-left: 80px;
+    &::before {
+      display: block;
+      content: "";
+      width: 552px;
+      height: 499px;
+      background-image: url(../../img/main-block/index-can-desctop.png);
+    }
+  }
 }
 .main-block__title {
   line-height: 36px;
   text-align: center;
   color: @white;
   text-align: center;
+  margin-bottom: 25px;
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    color: @black;
+  }
 }
 .main-block__subtitle {
   font-size: 14px;
@@ -18,6 +66,13 @@
   text-transform: uppercase;
   color: @white;
   text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: @black;
+  }
 }
 .main-block__img {
   display: block;
@@ -25,7 +80,35 @@
   height: 270px;
   object-fit: contain;
   margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
-.main-block__button {
+.main-block__img-tablet {
+  display: none;
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    display: block;
+  }
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+.main-block__img-desctop {
+  display: none;
+  @media (min-width: @desktop-width) {
+    display: block;
+    position: absolute;
+    right: 28%;
+    top: 20%;
+    z-index: -1;
+  }
+}
+.main-block .main-block__button {
+  margin-top: 3px;
+  padding-top: 11px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
