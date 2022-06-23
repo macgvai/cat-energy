@@ -6,8 +6,30 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 130px;
+  @media (min-width: @tablet-width) {
+    align-items: center;
+    margin-left: 25px;
+  }
 }
 .social-list__item {
 }
 .social-list__link {
+}
+.social-list__link--img-vk {
+  @media (min-width: @tablet-width) {
+    width: 30px;
+    height: 22px;
+  }
+}
+.social-list__link--img-inst {
+  @media (min-width: @tablet-width) {
+    width: 23px;
+    height: 23px;
+  }
+}
+.social-list__link--img-fb {
+  @media (min-width: @tablet-width) {
+    width: 28px;
+    height: 33px;
+  }
 }

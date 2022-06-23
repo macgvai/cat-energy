@@ -1,16 +1,38 @@
 .page-form__wrapper {
-  margin: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   @media (min-width: @tablet-width) {
-    margin: 0 30px;
+    padding-left: 71px;
+    padding-right: 67px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 .page-form__title {
+  margin-bottom: 35px;
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 22px;
+    margin-bottom: 55px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 34px;
+  }
 }
 .page-form__desc {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: @black;
+  padding-right: 30px;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 65px;
+  }
 }
 .page-form__form {
 }

@@ -1,5 +1,13 @@
 .info-cat {
   border: none;
+  margin: 0;
+  padding: 0;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 72px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 21px;
+  }
 }
 .info-cat__legend {
 }
@@ -16,6 +24,12 @@
    &:last-child {
      margin-bottom: 0;
    }
+   @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 .info-cat__lable {
   font-size: 16px;
@@ -23,6 +37,13 @@
   text-transform: uppercase;
   color: @special_dark-grey;
   flex-shrink: 0;
+  margin-top: 13px;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    padding: 10px 0;
+  }
 }
 .info-cat__input {
   width: 100%;
@@ -35,4 +56,11 @@
   font-size: 16px;
   text-transform: uppercase;
   color: @special_dark-grey;
+  margin-left: 14px;
+  @media (min-width: @tablet-width) {
+    height: 52px;
+    margin-left: 16px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

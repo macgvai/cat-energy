@@ -16,6 +16,19 @@
   min-height: 266px;
   padding: 21px;
   margin-bottom: 20px;
+  @media (min-width: @tablet-width) {
+    padding-left: 52px;
+    padding-top: 76px;
+    padding-right: 61px;
+    padding-bottom: 65px;
+    min-height: 372px;
+    margin-bottom: 28px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-top: 47px;
+    padding-right: 55px;
+    padding-bottom: 68px;
+  }
 }
 .program__img-circle {
   width: 50px;
@@ -29,8 +42,10 @@
   @media (min-width: @tablet-width) {
     position: absolute;
     right: 62px;
+    top: 91px;
     width: 200px;
     height: 200px;
+    margin: 0;
   }
   @media (min-width: @desktop-width) {
     width: 100px;
@@ -44,15 +59,17 @@
 }
 .program__img--slim {
   @media (min-width: @tablet-width) {
-    width: 150px;
+    width: 138px;
+    top: -10px;
   }
   @media (min-width: @desktop-width) {
     width: 70px;
+    top: 42px;
   }
 }
 .program__img--pro {
   @media (min-width: @tablet-width) {
-    width: 250px;
+    width: 267px;
   }
   @media (min-width: @desktop-width) {
     width: 135px;
@@ -67,6 +84,17 @@
   padding-top: 9px;
   font-weight: 400;
   margin-bottom: 12px;
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+    margin-bottom: 26px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: 62px;
+    margin-top: 30px;
+    margin-bottom: 74px;
+  }
 }
 .program__descr {
   position: relative;
@@ -85,7 +113,26 @@
     height: 1px;
     background-color: @form-border;
   }
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 51px;
+    &::after {
+      display: none;
+    }
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 26px;
+  }
 }
+
+.program__descr--pro {
+  padding-right: 34px;
+  @media (min-width: @tablet-width) {
+    padding-right: 0;
+  }
+}
+
 .program__link {
   position: relative;
   font-size: 16px;
@@ -103,6 +150,14 @@
     background-image: url(../../img/program/arrow.svg);
     background-repeat: no-repeat;
   }
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    &::after {
+      top: 7px;
+      left: 133px;
+    }
+  }
 }
 
 
@@ -113,5 +168,9 @@
       width: calc(100% - 217px);
       flex-grow: 0;
     }
+  @media (min-width: @desktop-width) {
+    width: auto;
+    flex-grow: 1;
+  }
 }
 

@@ -8,9 +8,22 @@
 
 .form__info-cat {
   grid-column: ~"1/3";
+  margin-top: 39px;
+  margin-bottom: 22px;
+  @media (min-width: @desktop-width) {
+    margin-top: 2px;
+    padding-right: 0;
+  }
 }
 
+
 .form__legend {
+  font-size: 24px;
+  line-height: 26px;
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form__lable {
@@ -22,21 +35,61 @@
 
 .form__programm {
   grid-column: ~"3/5";
+  border-top: 1px solid @form-border;
+  border-bottom: 1px solid @form-border;
+  @media (min-width: @tablet-width) {
+    margin-left: 71px;
+    margin-right: 67px;
+    padding: 0 20px;
+    border: 1px solid @form-border;
+    margin-bottom: 75px;
+  }
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding-right: 110px;
+  }
 }
 
 .form__contacts-owner {
   grid-column: ~"1/-1";
+  @media (min-width: @tablet-width) {
+    margin-bottom: 66px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .form__text-about-cat {
   grid-column: ~"1/-1";
+  @media (min-width: @tablet-width) {
+    margin-bottom: 59px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .form__additionally {
   grid-column: ~"1/-1";
 }
 
-.form__button {
+.form__submit {
+  margin-bottom: 31px;
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 60px;
+    margin-bottom: 50px;
+  }
+  @media (min-width: @desktop-width) {
+    grid-column: ~"1/-1";
+    gap: 0 80px;
+    margin-bottom: 60px;
+  }
+}
+
+ .form__submit .form__button {
   border: none;
   font-family: "Oswald";
   font-style: normal;
@@ -44,6 +97,13 @@
   font-size: 16px;
   text-transform: uppercase;
   grid-column: ~"1/3";
+  margin-bottom: 21px;
+  @media (min-width: @tablet-width) {
+  height: 52px;
+  grid-column: ~"1/2";
+  font-size: 20px;
+  line-height: 0px;
+  }
 }
 
 .form__required-fields {
@@ -53,4 +113,11 @@
   font-size: 14px;
   text-align: center;
   color: @black;
+  margin: 0;
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+    margin-top: 17px;
+  }
 }
