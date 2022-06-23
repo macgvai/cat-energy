@@ -1524,7 +1524,7 @@ a {
 @media (min-width: 1440px) {
   .form__programm {
     margin: 0;
-    padding-right: 110px;
+    margin-right: 110px;
   }
 }
 .form__contacts-owner {
