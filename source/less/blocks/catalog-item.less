@@ -2,18 +2,41 @@
   display: flex;
   flex-wrap: wrap;
   flex-grow: 1;
-  border-top: 1px solid @special_grey-2;
   margin-bottom: 25px;
   min-height: 144px;
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    margin-bottom: 0;
+    background-color: @basic_grey;
+    padding: 36px;
+    padding-top: 9px;
+    min-height: 512px;
+    background: linear-gradient(to top, @basic_grey 427px, transparent 427px);
+  }
 }
 .catalog-item__link-img {
   width: 137px;
-  height: 145px;
+  height: 143px;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    align-items: end;
+  }
 }
 .catalog-item__img {
+  &--desctop {
+    display: none;
+  }
+  @media (min-width: @tablet-width) {
+    display: none;
+    &--desctop {
+      display: block;
+    }
+  }
 }
 .catalog-item__info-wrap {
   display: flex;
@@ -21,8 +44,10 @@
   justify-content: space-between;
   padding: 20px 0;
   flex-grow: 1;
-  padding: 20px 0;
-  flex-grow: 1;
+  @media (min-width: @tablet-width) {
+    padding-top: 33px;
+    padding-bottom: 32px;
+  }
 }
 .catalog-item__link-name {
   display: block;
@@ -30,12 +55,25 @@
   line-height: 20px;
   text-transform: uppercase;
   color: @special_dark-grey-2;
+  width: 100px;
+  padding-left: 3px;
+  @media (min-width: @tablet-width) {
+    align-self: center;
+    padding-left: 0;
+    width: 130px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
 }
 .catalog-item__table {
   width: 100%;
+  border-collapse: collapse;
 }
 .catalog-item__row {
 }
+
 .catalog-item__info,
 .catalog-item__info-value {
   font-family: "Arial";
@@ -43,9 +81,19 @@
   font-weight: 400;
   font-size: 12px;
   color: @special_dark-grey;
+  padding: 0;
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 6px 0;
+    border-bottom: 1px solid @special_grey;
+  }
 }
 .catalog-item__info-value {
   text-align: right;
 }
 .catalog-item__button {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
