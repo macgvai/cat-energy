@@ -7,6 +7,10 @@
     padding-left: 30px;
     padding-right: 30px;
   }
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }
 .page-catalog__title {
   line-height: 36px;
@@ -18,11 +22,19 @@
     margin-top: 51px;
     margin-bottom: 80px;
   }
+  @media (min-width: @desktop-width) {
+    margin-top: 61px;
+    margin-bottom: 84px;
+  }
 }
 .page-catalog__catalog {
   @media (min-width: @tablet-width) {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  @media (min-width: @desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 .page-catalog__list {
@@ -36,8 +48,8 @@
   }
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    grid-template-columns: repeat(4, 245px);
+    gap: 62px 80px;
   }
 }
 .page-catalog__item {
