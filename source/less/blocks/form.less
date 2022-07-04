@@ -1,5 +1,8 @@
 .form {
-  @media (min-width: @desktop-width) {
+  @media (max-width: @only-mobile-width) {
+    overflow: hidden;
+  }
+    @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0 80px;
@@ -30,7 +33,19 @@
 
 }
 
-.form__input {
+.form__input,
+.text-about-cat__text {
+  &:hover {
+    border-color: @special_grey;
+    &:focus {
+      border: 2px solid @black;
+    }
+  }
+}
+
+
+.form__input--error {
+  border: 2px solid #FF8282;
 }
 
 .form__programm {

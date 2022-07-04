@@ -1,15 +1,38 @@
-// .green-line {
-//   position: relative;
-//   padding-right: 30px;
-//   background-color: @white;
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     display: block;
-//     top: 25px;
-//     width: 100vw;
-//     height: 2px;
-//     background-color: @basic_green;
-//     z-index: -1;
-//   }
-// }
+.form .green-line,
+.additional-items .green-line {
+  position: relative;
+  padding-right: 23px;
+  background-color: @white;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 15px;
+    width: 100vw;
+    height: 2px;
+    background-color: @basic_green;
+    z-index: -1;
+  }
+  @media (min-width: @tablet-width) {
+    padding: 0px 40px 0px 40px;
+    margin-left: -40px;
+    &::after {
+      top: 22px;
+      left: -31px;
+    }
+  }
+  @media (min-width: @desktop-width) {
+    &::after {
+      left: -70px;
+    }
+  }
+}
+
+.additional-items .green-line {
+  @media (min-width: @tablet-width) {
+    margin-left: 1px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-left: -40px;
+  }
+}

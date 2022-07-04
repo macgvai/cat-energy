@@ -14,6 +14,10 @@
 .social-list__item {
 }
 .social-list__link {
+  display: block;
+  &:active {
+    opacity: 0.6;
+  }
 }
 .social-list__link--img-vk {
   @media (min-width: @tablet-width) {
@@ -33,3 +37,21 @@
     height: 33px;
   }
 }
+
+
+
+.social-list__link:hover .social-list__link--img-fb path,
+.social-list__link:focus .social-list__link--img-fb path {
+  stroke: @basic_green;
+}
+.social-list__link:hover .social-list__link--img-inst path,
+.social-list__link:focus .social-list__link--img-inst path {
+  fill: @basic_green;
+}
+.social-list__link:hover .social-list__link--img-vk path,
+.social-list__link:focus .social-list__link--img-vk path {
+  fill: @basic_green;
+}
+
+
+

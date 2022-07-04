@@ -63,7 +63,7 @@
   top: -1px;
   width: 30px;
   height: 30px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid @special_grey;
   @media (min-width: @tablet-width) {
     width: 40px;
     height: 40px;
@@ -72,6 +72,17 @@
   }
 }
 
+.additionally__label:hover::before {
+  border: 1px solid @special_dark-grey;
+}
+.additionally__input:focus + .additionally__label::before {
+  border: 1px solid @special_dark-grey;
+}
+
+.additionally__input:disabled + .additionally__label {
+  opacity: 0.3;
+}
+
 .additionally__input:checked + .additionally__label::before {
-  background: url(../../img/additionally/checked\ .svg) no-repeat center;
+  background: url(../../img/additionally/checked.svg) no-repeat center;
 }

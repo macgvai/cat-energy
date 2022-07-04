@@ -245,6 +245,13 @@
     line-height: 30px;
     margin-right: 10px;
     border-bottom: 1px dotted;
+    &:hover,
+    &:focus-within {
+      border-bottom: 1px solid;
+    }
+    &:active {
+      border: none;
+    }
     &:last-child {
       margin-right: 0;
       margin-left: 10px;
@@ -273,7 +280,7 @@
   padding-right: 5px;
   @media (min-width: @tablet-width) {
     width: 100%;
-    width: 428px;
+    // width: 428px;
     height: 6px;
     border: none;
     background: @example_slider-nav;
@@ -289,11 +296,15 @@
   @media (min-width: @tablet-width) {
     width: 8px;
     height: 8px;
-    background-color: #68B738;
+    background-color: @basic_green;
     border-radius: 50%;
     box-sizing: content-box;
     border: 13px solid @white;
     box-shadow: 0px 0px 0px 1px @example_slider-nav;
     margin: 0 auto;
+    cursor: pointer;
+    &:active {
+      box-shadow: 0px 0px 0px 1px @basic_green;
+    }
   }
 }

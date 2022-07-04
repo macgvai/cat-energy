@@ -1,4 +1,5 @@
 .additional-items {
+  overflow: hidden;
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -117,10 +118,14 @@
   }
 }
 .additional-items .additional-items__value {
-  margin-left: 80px;
+  @media (min-width: @desktop-width) {
+    margin-left: 80px;
+  }
 }
 .additional-items .additional-items__price {
-  margin-right: 38px;
+  @media (min-width: @desktop-width) {
+    margin-right: 38px;
+  }
 }
 
 .additional-items__price {

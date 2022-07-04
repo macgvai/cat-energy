@@ -128,7 +128,7 @@
 
 .program__descr--pro {
   padding-right: 34px;
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     padding-right: 0;
   }
 }
@@ -140,6 +140,13 @@
   color: @black;
   align-self: end;
   height: 21px;
+  &:hover,
+  &:focus-within {
+    opacity: 0.8;
+  }
+  &:active {
+    opacity: 0.6;
+  }
   &::after {
     content: "";
     position: absolute;

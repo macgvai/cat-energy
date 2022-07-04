@@ -7,6 +7,13 @@
     background: @basic_green;
     color: @white;
     cursor: pointer;
+    &:hover,
+    &:focus-within {
+      background: @basic_green-2
+    }
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
 
