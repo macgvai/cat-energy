@@ -4,6 +4,9 @@
   background-repeat: no-repeat;
   background-position-x: center;
   margin-bottom: 21px;
+  @media (max-width: @only-mobile-width) {
+    min-height: 481px;
+  }
   @media (min-width: @tablet-width) {
     background: none;
     margin-bottom: 55px;
@@ -11,29 +14,44 @@
   @media (min-width: @desktop-width) {
     min-height: 608px;
     &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 50%;
-    height: 694px;
-    top: 0;
-    right: 0;
-    background-image: url(../../img/main-block/cat-main-block-desktop.png);
-    background-color: #65a93c;
-    background-repeat: no-repeat;
-    background-position: right;
-    z-index: -2;
+      content: "";
+      display: block;
+      position: absolute;
+      width: 50%;
+      height: 694px;
+      top: 0;
+      right: 0;
+      background-image: url(../../img/main-block/cat-main-block-desktop.png);
+      background-color: #65a93c;
+      background-repeat: no-repeat;
+      background-position: right;
+      z-index: -2;
     }
   }
 }
 .main-block__wrapper {
+  position: relative;
   margin: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 27px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 167px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 270px;
+    background-image: url(../../img/main-block/index-can.png);
+    z-index: 1;
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/main-block/index-can-mobile1@2x.png);
+      background-size: cover;
+    }
+  }
   @media (min-width: @tablet-width) {
-    position: relative;
     margin: 0 30px;
     padding-top: 45px;
     min-height: 800px;
@@ -46,27 +64,26 @@
       height: 609px;
       background-image: url(../../img/main-block/index-can-tablet.png);
       z-index: -1;
+      @media (min-resolution: 2dppx) {
+        background-image: url(../../img/main-block/index-can-tablet@2x.png);
+      }
     }
   }
   @media (min-width: @desktop-width) {
-    position: relative;
     margin: 0 110px;
     padding-right: 50%;
     padding-top: 112px;
     min-height: 0;
-    &::before {
-      display: block;
-      content: "";
+    &::after {
       width: 552px;
       height: 499px;
       background-image: url(../../img/main-block/index-can-desctop.png);
-      position: absolute;
       top: 28px;
       left: 37%;
-      z-index: -1;
-    }
-    &::after {
-      display: none;
+      transform: none;
+      @media (min-resolution: 2dppx) {
+        background-image: url(../../img/main-block/index-can-desctop@2x.png);
+      }
     }
   }
 }
@@ -149,6 +166,8 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  @media (max-width: @only-mobile-width) {
+    margin-top: 272px;  }
   @media (min-width: @tablet-width) {
     width: 244px;
     height: 54px;
