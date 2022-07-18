@@ -1,5 +1,5 @@
 .main-block {
-  background-image: linear-gradient(to top, #fff 179px, transparent 179px), url(../img/main-block/cat-main-block-background.png);
+  background-image: linear-gradient(to top, #fff 179px, transparent 179px), url(../img/main-block/cat-main-block-background.webp);
   background-color: @main-block-green;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -21,7 +21,7 @@
       height: 694px;
       top: 0;
       right: 0;
-      background-image: url(../img/main-block/cat-main-block-desktop.png);
+      background-image: url(../img/main-block/cat-main-block-desktop.webp);
       background-color: #65a93c;
       background-repeat: no-repeat;
       background-position: right;
@@ -45,12 +45,9 @@
     transform: translateX(-50%);
     width: 280px;
     height: 270px;
-    background-image: url(../img/main-block/index-can.png);
+    background-image: image-set(url(../img/main-block/index-can.webp) 1x, url(../img/main-block/index-can-mobile1@2x.webp) 2x);
+    background-size: cover;
     z-index: 1;
-    @media (min-resolution: 2dppx) {
-      background-image: url(../img/main-block/index-can-mobile1@2x.png);
-      background-size: cover;
-    }
   }
   @media (min-width: @tablet-width) {
     margin: 0 30px;
@@ -63,11 +60,8 @@
       top: 247px;
       width: 709px;
       height: 609px;
-      background-image: url(../img/main-block/index-can-tablet.png);
+      background-image: image-set(url(../img/main-block/index-can-tablet.webp) 1x, url(../img/main-block/index-can-tablet@2x.webp) 2x);
       z-index: -1;
-      @media (min-resolution: 2dppx) {
-        background-image: url(../img/main-block/index-can-tablet@2x.png);
-      }
     }
   }
   @media (min-width: @desktop-width) {
@@ -78,13 +72,14 @@
     &::after {
       width: 552px;
       height: 499px;
-      background-image: url(../img/main-block/index-can-desctop.png);
+      background-image:
+        image-set(
+          url("../img/main-block/index-can-desctop.webp") 1x,
+          url("../img/main-block/index-can-desctop@2x.webp") 2x
+          );
       top: 28px;
       left: 37%;
       transform: none;
-      @media (min-resolution: 2dppx) {
-        background-image: url(../img/main-block/index-can-desctop@2x.png);
-      }
     }
   }
 }
