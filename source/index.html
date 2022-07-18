@@ -7,7 +7,7 @@
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>cat-energy</title>
   </head>
   <body class="page__body">
@@ -120,9 +120,15 @@
             </p>
           </div>
           <div class="example__slider">
-            <img class="example__slider-item" src="img/example/before-mobile 1.png" width="311" height="232" alt="толстый кот">
-            <img class="example__slider-item--tablet" src="img/example/image_cat_tablet.png" width="708" height="620" alt="толстый кот">
-            <img class="example__slider-item--desktop" src="img/example/image_cat_desktop.png" width="690" height="656" alt="толстый кот">
+            <picture>
+              <source class="example__slider-item" type="image/webp" media="(min-width: 1440px)" srcset="img/example/image_cat_desktop.webp 1x, img/example/image_cat_desktop@2x.webp 2x" width="690" height="656">
+              <source class="example__slider-item" type="image/webp" media="(min-width: 768px)" srcset="img/example/image_cat_tablet.webp 1x, img/example/image_cat_tablet@2x.webp 2x" width="708" height="620">
+              <source class="example__slider-item" type="image/webp" srcset="img/example/before-mobile1.webp 1x, img/example/before-mobile1@2x.webp 2x">
+
+              <source class="example__slider-item" media="(min-width: 1440px)" srcset="img/example/image_cat_desktop.png 1x, img/example/image_cat_desktop@2x.png 2x" width="690" height="656">
+              <source class="example__slider-item" media="(min-width: 768px)" srcset="img/example/image_cat_tablet.png 1x, img/example/image_cat_tablet@2x.png 2x" width="708" height="620">
+              <img class="example__slider-item" src="img/example/before-mobile1.png" srcset="img/example/before-mobile1@2x.png 2x" width="311" height="232" alt="толстый кот">
+            </picture>
             <div class="example__slider-navigation">
               <p class="example__slider-navigation-desc">было</p>
               <div class="example__slider-navigation-scale">
@@ -197,6 +203,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

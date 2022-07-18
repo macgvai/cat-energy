@@ -1,5 +1,5 @@
 .main-block {
-  background-image: linear-gradient(to top, #fff 179px, transparent 179px), url(../../img/main-block/cat-main-block-background.png);
+  background-image: linear-gradient(to top, #fff 179px, transparent 179px), url(../img/main-block/cat-main-block-background.png);
   background-color: @main-block-green;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -21,7 +21,7 @@
       height: 694px;
       top: 0;
       right: 0;
-      background-image: url(../../img/main-block/cat-main-block-desktop.png);
+      background-image: url(../img/main-block/cat-main-block-desktop.png);
       background-color: #65a93c;
       background-repeat: no-repeat;
       background-position: right;
@@ -29,6 +29,7 @@
     }
   }
 }
+
 .main-block__wrapper {
   position: relative;
   margin: 0 20px;
@@ -44,10 +45,10 @@
     transform: translateX(-50%);
     width: 280px;
     height: 270px;
-    background-image: url(../../img/main-block/index-can.png);
+    background-image: url(../img/main-block/index-can.png);
     z-index: 1;
     @media (min-resolution: 2dppx) {
-      background-image: url(../../img/main-block/index-can-mobile1@2x.png);
+      background-image: url(../img/main-block/index-can-mobile1@2x.png);
       background-size: cover;
     }
   }
@@ -62,10 +63,10 @@
       top: 247px;
       width: 709px;
       height: 609px;
-      background-image: url(../../img/main-block/index-can-tablet.png);
+      background-image: url(../img/main-block/index-can-tablet.png);
       z-index: -1;
       @media (min-resolution: 2dppx) {
-        background-image: url(../../img/main-block/index-can-tablet@2x.png);
+        background-image: url(../img/main-block/index-can-tablet@2x.png);
       }
     }
   }
@@ -77,16 +78,17 @@
     &::after {
       width: 552px;
       height: 499px;
-      background-image: url(../../img/main-block/index-can-desctop.png);
+      background-image: url(../img/main-block/index-can-desctop.png);
       top: 28px;
       left: 37%;
       transform: none;
       @media (min-resolution: 2dppx) {
-        background-image: url(../../img/main-block/index-can-desctop@2x.png);
+        background-image: url(../img/main-block/index-can-desctop@2x.png);
       }
     }
   }
 }
+
 .main-block__title {
   line-height: 36px;
   text-align: center;
@@ -108,6 +110,7 @@
     margin-bottom: 33px;
   }
 }
+
 .main-block__subtitle {
   font-size: 14px;
   line-height: 14px;
@@ -130,6 +133,7 @@
     margin-left: 80px;
   }
 }
+
 .main-block__img {
   display: block;
   width: 280px;
@@ -140,6 +144,7 @@
     display: none;
   }
 }
+
 .main-block__img-tablet {
   display: none;
   @media (min-width: @tablet-width) {
@@ -150,6 +155,7 @@
     display: none;
   }
 }
+
 .main-block__img-desctop {
   display: none;
   @media (min-width: @desktop-width) {
@@ -160,6 +166,7 @@
     z-index: -1;
   }
 }
+
 .main-block .main-block__button {
   margin-top: 3px;
   padding-top: 11px;
@@ -170,7 +177,6 @@
     margin-top: 272px;  }
   @media (min-width: @tablet-width) {
     width: 244px;
-    height: 54px;
     margin-left: 82px;
     font-size: 20px;
     line-height: 20px;
@@ -180,4 +186,3 @@
     margin-left: 80px;
   }
 }
-
